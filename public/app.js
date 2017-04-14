@@ -6,6 +6,7 @@ var app = function(){
   munroList.getData(function(munros){
     munroSelectView.render(munros)
     munroSelectView.selectElement.addEventListener('change', function(){
+      munroDetailsView.clear()
       munroDetailsView.render(munros[this.value])
     })
   })
