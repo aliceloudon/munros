@@ -4,6 +4,8 @@ var MunroMapWrapper = function(container, coords, zoom){
 
 MunroMapWrapper.prototype = {
 
-  
+  addMarker: function(coords){
+    var marker = new google.maps.Marker({ position: coords, map: this.googleMap })
+  }
   
 }

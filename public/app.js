@@ -10,7 +10,6 @@ var app = function(){
       munroDetailsView.clear()
       munroDetailsView.render(munros[this.value])
       munroMapView.render(munros[this.value])
-      console.log(munros[this.value])
     })
   })
 
