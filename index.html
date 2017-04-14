@@ -3,6 +3,9 @@
   <head>
     <title>Scotland's Munros</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src='https://maps.googleapis.com/maps/api/js'></script>
+    <script src='munro_map_wrapper.js'></script>
+    <script src='munro_map_view.js'></script>
     <script src='munro_list.js'></script>
     <script src='munro_select_view.js'></script>
     <script src='munro_details_view.js'></script>
@@ -20,6 +23,9 @@
           <select id='munros'></select>
         </article>
         <article id='munro-details'></article>
+        <article>
+          <figure id='main-map'></figure>
+        </article>
       </section>
     </main>
   </body>
