@@ -6,7 +6,7 @@ MunroDetailsView.prototype = {
 
   render: function(munro){
     var pTag = document.createElement('p')
-    pTag.innerText = munro.name
+    pTag.innerText = "Munro name: " + munro.name + "\n" + "Height: " + munro.height + "\n" + "Latitude/Longitude: " + munro.latlng_lat + "/" + munro.latlng_lng + "\n" + "Region: " + munro.region + "\n" + "Meaning of the name: " + munro.meaning
     this.detailsElement.appendChild(pTag)
   },
 
