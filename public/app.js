@@ -3,7 +3,7 @@ var app = function(){
   var munroSelectView = new MunroSelectView(document.querySelector('#munros'))
 
   munroList.getData(function(munros){
-
+    munroSelectView.render(munros)
   })
 
 }

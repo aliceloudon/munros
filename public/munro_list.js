@@ -12,7 +12,7 @@ MunroList.prototype = {
       if (request.status === 200){
         var jsonString = request.responseText
         this.munros = JSON.parse(jsonString)
-        console.log(this.munros)
+        // console.log(this.munros)
         callback(this.munros)
       }
     }.bind(this)
