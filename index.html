@@ -4,6 +4,8 @@
     <title>Scotland's Munros</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src='https://maps.googleapis.com/maps/api/js'></script>
+    <script src="munro_chart_view.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src='munro_map_wrapper.js'></script>
     <script src='munro_map_view.js'></script>
     <script src='munro_list.js'></script>
@@ -17,6 +19,9 @@
     </header>
     
     <main>
+ <!--      <section>
+        <input id="search" name="search" />
+      </section> -->
       <section>
         <article>
           <p>Click on the dropdown to see a list of all the munros</p>
@@ -25,6 +30,9 @@
         <article id='munro-details'></article>
         <article>
           <figure id='main-map'></figure>
+        </article>
+        <article>
+          <figure id="column-chart"></figure>
         </article>
       </section>
     </main>
