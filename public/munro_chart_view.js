@@ -6,7 +6,7 @@ MunroChartView.prototype = {
 
   renderChart: function(munros){
     var container = this.chartElement
-    var title = "Munros"
+    var title = "Munros by Height"
 
     var counter1 = 0
     var counter2 = 0

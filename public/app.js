@@ -4,6 +4,7 @@ var app = function(){
   var munroDetailsView = new MunroDetailsView(document.querySelector('#munro-details'))
   var munroMapView = new MunroMapView(document.querySelector('#main-map'))
   var munroChartView = new MunroChartView(document.querySelector('#column-chart'))
+  var munroPieChartView = new MunroPieChartView(document.querySelector('#pie-chart'))
 
   munroList.getData(function(munros){
     munroSelectView.render(munros)
@@ -13,6 +14,7 @@ var app = function(){
       munroMapView.render(munros[this.value])
     })
     munroChartView.renderChart(munros)
+    munroPieChartView.renderChart(munros)
   })
 
 }
